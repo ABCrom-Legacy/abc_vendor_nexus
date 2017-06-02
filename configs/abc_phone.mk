@@ -16,7 +16,13 @@ include vendor/nexus/configs/aosp_fixes.mk
 include vendor/nexus/configs/abc_main.mk
 include vendor/nexus/configs/system_additions.mk
 include vendor/nexus/configs/version.mk
-include vendor/nexus/sdclang/sdclang.mk
+
+# Include SDCLANG definitions if it is requested and available
+ifeq ($(HOST_OS),linux)
+    ifneq ($(wildcard prebuilts/clang/host/linux-x86/SDClang-4.0/),)
+        include vendor/nexus/sdclang/sdclang.mk
+    endif
+endif
 
 # Telephony packages
 PRODUCT_PACKAGES += \
