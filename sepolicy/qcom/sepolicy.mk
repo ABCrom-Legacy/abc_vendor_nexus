@@ -4,4 +4,5 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/nexus/sepolicy/qcom
+    vendor/nexus/sepolicy/qcom/common \
+    vendor/nexus/sepolicy/qcom/$(TARGET_BOARD_PLATFORM)
