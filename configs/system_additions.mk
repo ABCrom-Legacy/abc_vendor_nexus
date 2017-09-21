@@ -17,13 +17,13 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/nexus/prebuilt/bin/sysinit:system/bin/sysinit
 
-# ABC custom init file
-PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/etc/init.abc.rc:system/etc/init/init.abc.rc
-
 # APN
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# Copy all ABC-specific init rc files
+$(foreach f,$(wildcard vendor/nexus/prebuilt/etc/init/*.rc),\
+	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
