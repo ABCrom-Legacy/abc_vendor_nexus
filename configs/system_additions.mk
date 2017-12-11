@@ -86,11 +86,11 @@ PRODUCT_PACKAGES += \
     WhiteAccent
 
 # MusicFX advanced effects
-#ifneq ($(TARGET_NO_DSPMANAGER), true)
-#PRODUCT_PACKAGES += \
-    #libcyanogen-dsp \
-    #audio_effects.conf
-#endif
+ifneq ($(TARGET_NO_DSPMANAGER), true)
+PRODUCT_PACKAGES += \
+    libcyanogen-dsp \
+    audio_effects.conf
+endif
 
 # Disable Rescue Party
 PRODUCT_PROPERTY_OVERRIDES += \
