@@ -36,11 +36,11 @@ PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/fstrim:system/bin/fstrim
 
 # Security Enhanced Linux
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.build.selinux=1
 
 # Set Pixel blue light theme on Gboard
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.com.google.ime.theme_id=5
 
 # Don't compile SystemUITests
@@ -97,11 +97,11 @@ PRODUCT_PACKAGES += \
 endif
 
 # Disable Rescue Party
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     persist.sys.disable_rescue=true
 
 # Set custom volume steps
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.config.media_vol_steps=25 \
     ro.config.bt_sco_vol_steps=25
 

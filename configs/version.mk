@@ -14,5 +14,5 @@
 
 ABC_VERSION := $(PLATFORM_VERSION)-$(shell date +%Y%m%d)
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.abc.version=$(ABC_VERSION)
