@@ -21,6 +21,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/etc/init.abc.rc:root/init.abc.rc
 
+# APN
+PRODUCT_COPY_FILES += \
+    vendor/nexus/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/nexus/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
