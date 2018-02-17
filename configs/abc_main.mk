@@ -30,3 +30,7 @@ PRODUCT_PACKAGES += \
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     librsjni
+
+# OTA
+PRODUCT_PACKAGES += \
+    AbcOTA

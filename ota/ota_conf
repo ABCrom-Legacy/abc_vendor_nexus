@@ -1,0 +1,8 @@
+#OTA Config file
+ota_url=https://raw.githubusercontent.com/ABCrom-Xiaomi/OTA/o2/ota.xml
+release_type=Stable
+device_name=ro.product.device
+version_source=ro.abc.version
+version_delimiter=-
+version_position=1
+version_format=yyyyMMdd
