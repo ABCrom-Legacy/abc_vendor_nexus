@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Add Stock Lollipop bootanimation based on device
-ifneq ($(filter angler,$(TARGET_PRODUCT)),)
+ifneq ($(filter 1080,$(TARGET_SCREEN_WIDTH)),)
     PRODUCT_COPY_FILES += \
-        vendor/nexus/prebuilt/bootanimation/angler.zip:system/media/bootanimation.zip
+        vendor/nexus/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
 endif

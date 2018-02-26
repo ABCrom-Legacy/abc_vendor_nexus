@@ -13,7 +13,6 @@
 # limitations under the License.
 
 include vendor/nexus/configs/aosp_fixes.mk
-include vendor/nexus/configs/bootanimation.mk
 include vendor/nexus/configs/abc_main.mk
 include vendor/nexus/configs/system_additions.mk
 include vendor/nexus/configs/version.mk
@@ -29,3 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.dun.override=0
+
+# Bootanimation
+$(call inherit-product, vendor/nexus/configs/bootanimation.mk)
+
