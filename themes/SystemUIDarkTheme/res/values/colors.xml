@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <!-- DUI dialogs -->
     <color name="smartbar_editor_popup_background">@*android:color/background_floating_material_dark</color>
     <color name="smartbar_editor_popup_text">@android:color/white</color>
     <color name="smartbar_editor_popup_icon_fill">@*android:color/accent_device_default_light</color>
@@ -16,4 +16,7 @@
     <color name="screen_pinning_button_text">@android:color/black</color>
     <color name="screen_pinning_bg_circ_color">#40000000</color>
     <color name="screen_pinning_nav_icon_hightlight_outer_color">@android:color/black</color>
+
+    <!-- Recents clear all -->
+    <color name="floating_action_button_icon_color">@*android:color/primary_device_default_dark</color>
 </resources>
