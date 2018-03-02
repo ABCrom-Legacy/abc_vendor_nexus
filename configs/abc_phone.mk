@@ -31,11 +31,11 @@ PRODUCT_PACKAGES += \
     Stk
 
 # Allow tethering without provisioning app
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
 
 # Thank you, please drive thru!
-PRODUCT_GENERIC_PROPERTIES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.dun.override=0
 
 # Bootanimation
