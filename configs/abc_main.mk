@@ -22,11 +22,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     Gallery2
 
-# Custom Packages
-#PRODUCT_PACKAGES += \
-    #Busybox
-    #ThemeInterfacer
-
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     librsjni
