@@ -15,7 +15,7 @@
 SDCLANG ?= true
 SDCLANG_FORCED ?= false
 
-SDCLANG_PATH := prebuilts/clang/host/linux-x86/SDClang-4.0/bin
+SDCLANG_PATH := vendor/qcom/sdclang-4.0/linux-x86/bin
 
 SDCLANG_LTO_DEFS := vendor/nexus/sdclang/sdllvm-lto-defs.mk
 
