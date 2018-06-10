@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
     YellowAccent \
     WhiteAccent
 
+# Analog clocks
+PRODUCT_PACKAGES += \
+    DeepNightClock
+
 # MusicFX advanced effects
 ifneq ($(TARGET_NO_DSPMANAGER), true)
 PRODUCT_PACKAGES += \
