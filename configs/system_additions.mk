@@ -102,7 +102,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Set custom volume steps
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.config.media_vol_steps=25 \
-    ro.config.bt_sco_vol_steps=25
+    ro.config.media_vol_steps=30 \
+    ro.config.bt_sco_vol_steps=30
 
 $(call inherit-product-if-exists, vendor/nexus/prebuilt/prebuilt.mk)
