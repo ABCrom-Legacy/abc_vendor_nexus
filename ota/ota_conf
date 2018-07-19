@@ -1,5 +1,5 @@
 #OTA Config file
-ota_url=https://cergo666.tk/wight554/abc.xml
+ota_url=http://cergo666.tk/wight554/abc.xml
 release_type=Stable
 device_name=ro.product.device
 version_source=ro.abc.version
